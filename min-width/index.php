@@ -126,7 +126,7 @@
 		</section>
 		<footer class="footer">
 			<h1>Footer</h1>
-			<p><a href="http://lea.verou.me/css3patterns/">CSS3 Patterns</a></p>
+			<p><a href="http://lea.verou.me/css3patterns/">CSS3 Patterns</a> <a href="https://24ways.org/2011/css3-patterns-explained/">CSS3 Patterns Explained</a></p>
 		</footer>
 	</div>
 
