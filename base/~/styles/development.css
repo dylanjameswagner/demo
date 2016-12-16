@@ -1,0 +1,94 @@
+/* development */
+
+	#header,
+	#header > *,
+	#main,
+	#main > *,
+	#footer,
+	#footer > * {
+		background: rgba(0,0,0,.05); }
+
+	#development * {
+		padding: 0;
+		border: 0;
+		font: inherit;
+		font-size: 13px;
+		line-height: 1.2em;
+		vertical-align: baseline; }
+
+	#development a {
+		color: #000; }
+
+	#development {
+		position: fixed; top: 0; right: 0; z-index: 9999;
+		max-width: 100%; max-height: 100%;
+		background: #eee;
+		overflow: hidden;
+		opacity: .75;
+		text-align: left;
+		font-size: 1.3rem; }
+	#development.expanded {
+		opacity: 1; }
+
+	#development .actions {
+		margin: 0 0;
+		overflow: auto; }
+	#development .actions > * {
+		display: block;
+		padding: .3em .4em .4em; }
+	#development .actions .fl { float:  left; margin-left:  0; }
+	#development .actions .fr { float: right; margin-right: 0; }
+	#development .active a {
+		text-decoration: line-through; }
+
+	#development .toggle {
+		padding-right: 1px;
+		text-decoration: none;
+		font-family: monospace;
+		letter-spacing: -.2em; }
+	#development .toggle span {
+		display: none;
+		font-size: .9em; }
+	#development .toggle span:first-child {
+		display: inline;
+		vertical-align: middle; }
+
+	#development .information {
+		display: none;
+		padding: 1.1em 0 .1em; }
+	#development.hover .information {
+		display: block; }
+
+	#development .information > * {
+		`margin: .75em 0 0; }
+
+	#development table {
+		display: block; }
+	#development thead,
+	#development tfoot,
+	#development tbody {
+		display: table; }
+	#development caption,
+	#development th,
+	#development td {
+		padding: .2em .5em; }
+	#development th {
+		width: auto;
+		padding-right: .5em; }
+
+/* pages */
+
+	#kitchen-sink {}
+	#kitchen-sink section {
+		position: relative; }
+	#kitchen-sink section h1 {
+		white-space: nowrap; }
+	#kitchen-sink section .return {
+		position: absolute; top: 0; right: 0;
+		line-height: 2.5rem; }
+
+	#kitchen-sink section.collapse {
+		height: 3.6rem;
+		overflow: hidden; }
+	#kitchen-sink section.collapse .return {
+		display: none; }

@@ -1,0 +1,32 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// print.css
+
+*/
+
+/* common */
+	body {
+		background: #fff;
+		font-size: 12pt;
+	}
+	p {
+		orphans: 4;
+		widows: 4;
+	}
+	a {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	#content a[href]:after{
+		content: " (" attr(href) ")";
+		font-weight: normal;
+	}
+
+/* structure */
+	#footer,
+	#secondary {display: none !important;}
+	#primary {width: 100%;}
+
+/* navigation */
+	#nav_global {display: none !important;}

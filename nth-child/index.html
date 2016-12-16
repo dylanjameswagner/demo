@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://css-tricks.com/examples/nth-child-tester/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+
+	<title>:nth Tester</title>
+
+	<link rel="stylesheet" href="http://css-tricks.com/examples/nth-child-tester/css/style.css">
+
+  <script src="./ nth Tester_files/jquery.min.js"></script>
+  <script src="./ nth Tester_files/example.js"></script>
+<script type="text/javascript" async="" src="./ nth Tester_files/bsa.js"></script><script type="text/javascript" async="" src="./ nth Tester_files/ga.js"></script><script type="text/javascript" id="_bsap_js_3469a2a501a9e18091036aa0c89f9dcb" src="./ nth Tester_files/s_3469a2a501a9e18091036aa0c89f9dcb.js" async="async"></script><style type="text/css" id="bsa_css">.one{position:relative}.one .bsa_it_ad{display:block;padding:15px;border:1px solid #e1e1e1;background:#f9f9f9;font-family:helvetica,arial,sans-serif;line-height:100%;position:relative}.one .bsa_it_ad a{text-decoration:none}.one .bsa_it_ad a:hover{text-decoration:none}.one .bsa_it_ad .bsa_it_t{display:block;font-size:12px;font-weight:bold;color:#212121;line-height:125%;padding:0 0 5px 0}.one .bsa_it_ad .bsa_it_d{display:block;font-size:11px;color:#434343;font-size:12px;line-height:135%}.one .bsa_it_ad .bsa_it_i{float:left;margin:0 15px 10px 0}.one .bsa_it_p{display:block;text-align:right;position:absolute;bottom:10px;right:15px}.one .bsa_it_p a{font-size:10px;color:#666;text-decoration:none}.one .bsa_it_ad .bsa_it_p a:hover{font-style:italic}</style></head>
+
+<body>
+
+    <div id="demo-top-bar">
+
+  <div id="demo-bar-inside">
+
+    <h2 id="demo-bar-badge">
+      <a href="http://css-tricks.com/">CSS-Tricks Example</a>
+    </h2>
+
+    <div id="demo-bar-buttons">
+      <a href="http://css-tricks.com/how-nth-child-works/" class="header-button">← Back to Article</a> &lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <a href="http://css-tricks.com/downloads/" class="header-button">More Demos →</a>    </div>
+
+    <div id="demo-bar-ad">
+      <div id="bsap_1255488" class="bsap_1255488 bsap"><div class="bsa_it one"></div></div>
+      <a href="http://adpacks.com/" id="bsap_aplink">via Ad Packs</a>
+    </div>
+
+  </div>
+
+</div>
+	<div id="page-wrap">
+
+		<div class="left">
+
+			<div class="instructions">
+
+				<h1>:nth Tester</h1>
+
+				<code>
+					<select id="el">
+						<option value="li">li</option>
+						<option value="div">div</option>
+					</select>
+					<select id="kind">
+						<option value=":nth-child" selected="">:nth-child</option>
+						<option value=":nth-of-type">:nth-of-type</option>
+						<option value=":nth-last-child">:nth-last-child</option>
+						<option value=":nth-last-of-type">:nth-last-of-type</option>
+					</select>
+					(
+					<input id="equation" type="text" value="3n+2">
+					)
+				</code>
+
+				<h3>Recipes</h3>
+
+				<ul class="recipies-list">
+					<li id="rec-1"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select the third item if it's a list item</a></li>
+					<li id="rec-2"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select the the first four elements if they are list items</a></li>
+					<li id="rec-3"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select the second to last element if it is a list item</a></li>
+					<li id="rec-4"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select the first appearing div</a></li>
+					<li id="rec-5"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select the last appearing div</a></li>
+					<li id="rec-6"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select odd list items</a></li>
+					<li id="rec-7"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select every fifth list item</a></li>
+					<li id="rec-8"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select every third element starting at second if it's a list item</a></li>
+					<li id="rec-9"><a href="http://css-tricks.com/examples/nth-child-tester/#">Select all but the first 6 list items</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="right">
+
+			<h2>&lt;ul&gt;</h2>
+			<ul id="list">
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <span>&lt;span&gt;</span> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <span>&lt;span&gt;</span> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <span>&lt;span&gt;</span>
+			  	<ul>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					</ul>
+				</li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <span>&lt;span&gt;</span> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <span>&lt;span&gt;</span> <span>&lt;span&gt;</span> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <span>&lt;span&gt;</span></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <span>&lt;span&gt;</span> <span>&lt;span&gt;</span></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div>
+			  	<ul>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div>
+						  <ul>
+							  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+							  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+							  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+							</ul>
+						</li>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					</ul>
+				</li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			  <li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			</ul>
+			<h2>&lt;/ul&gt;</h2>
+
+		</div>
+
+	</div>
+
+	 <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.bsa_it_ad {
+		padding: 8px 4px 8px 12px !important;
+		position: relative;
+		border: 0 !important;
+		background: #D6D5D5 !important;
+		border-top: 0 !important;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	.bsa_it_ad:before, .bsa_it_ad:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #989898;
+		border-bottom: 6px solid #989898;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.bsa_it_ad:before {
+		top: 0;
+		left: 12px;
+		z-index: -2;
+		background: #6C6666;
+		border-bottom: 12px solid #6C6666;
+	}
+
+	.bsa_it_ad a {
+	  margin: 0 !important;
+		padding: 0 !important;
+	}
+	.bsa_it_ad a img {
+	  border: 0 !important;
+		position: static !important;
+	}
+	.bsa_it_ad a:hover img {
+		margin: 0 !important;
+	}
+	.bsa_it_ad a:hover {
+	  background: none !important;
+	}
+	.bsa_it_i {
+		margin: 0 15px 0 0 !important;
+	}
+	.bsa_it_t {
+		font-size: 14px !important;
+		margin: 12px 0 0 0 !important;
+	}
+	.bsa_it_d {
+		padding-right: 10px;
+	}
+	.bsa_it_p{
+		display: none !important;
+	}
+	#demo-bar-ad {
+		width: 416px;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	#bsap_aplink {
+		position: absolute;
+		color: #999;
+		text-decoration: none;
+		bottom: 8px !important;
+		right: 8px !important;
+		padding: 0 !important;
+	}
+	.bsa_it_p a:hover {
+		background:none !important;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #e18728;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		box-shadow: 0 0 10px black;
+		padding: 20px 0 15px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#demo-top-bar:before, #demo-top-bar:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #e18728;
+		border-bottom: 6px solid #8F5314;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	#demo-top-bar:before {
+		top: 0;
+		left: 12px;
+		background: #6C6666;
+		border-bottom: 12px solid #62390E;
+	}
+
+	#demo-bar-buttons {
+		display: inline-block;
+		width: 236px;
+		text-align: center;
+		vertical-align: top;
+		font-size: 0;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		color: white;
+		display: block;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		color: #333;
+	}
+
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+
+<script type="text/javascript">
+	(function(){ var bsa = document.createElement('script'); bsa.type = 'text/javascript'; bsa.async = true; bsa.src = '//s3.buysellads.com/ac/bsa.js'; (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa); })();
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-68528-29']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga); })();
+</script>
+
+
+</body><div id="temp-styles">­<style>#list li:nth-child(4n+1) { background: #E18728; color: black; box-shadow: 0 0 5px black; }</style></div></html>

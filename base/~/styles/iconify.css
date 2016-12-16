@@ -1,0 +1,237 @@
+/* iconify.css // based on iconize.css 0.5 */
+
+/* reset */
+
+	a:hover {
+		background-position: right -16px; }
+
+	a[href = ""],
+	a[href = "#"],
+	a[href *= "#"],
+	a[href *= "./"],
+	a[href ^= "/"],
+	a[href ^= "javascript:"],
+	a[href ^= "mailto:"],
+	a[href ^= "callto:"],
+	a[href ^= "tel:"] {
+		padding: 0;
+		background: none; }
+
+/* alert */
+
+	a[href = ""],
+	a[href = "."],
+	a[href = "./"],
+	a[href = "../"],
+	a[href = "mailto:"] {
+		padding: 5px 0 5px 19px;
+		background: url('../images/iconify/alert.png') no-repeat scroll 0 50%;
+		text-shadow: 1px -1px 0 rgba(255,153,0,.5);
+		color: rgba(0,0,0,.8); }
+
+/* tld(s) */
+
+	a[href *= ".mobi"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/mobile.png') no-repeat scroll 0 3px; }
+
+/* wordpress */
+
+	a.post-edit-link,
+	p.comment_edit a {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/page_edit.png') no-repeat scroll 0 50%; }
+
+	a[href = '#respond'],
+	p.comment_reply a {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/comment.png') no-repeat scroll 0 50%; }
+	a[href *= 'wp-login.php?action=logout'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/logout.gif') no-repeat scroll 0 50%; }
+	a[href $= '/trackback/'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/link.png') no-repeat scroll 0 50%; }
+	a[href $= '/feed/'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/rss.png') no-repeat scroll 0 50%; }
+
+/* sites (pictures & movies) */
+	a[href *= "youtube.com/watch?"],
+	a[href *= "sevenload.com/videos/"],
+	a[href *= "metacafe.com/watch/"] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_film.gif') no-repeat scroll 0 50%;
+		}
+	a[href *= "flickr.com/photos/"],
+	a[href *= "zooomr.com"],
+	a[href *= "imageshack.us"],
+	a[href *= "bubbleshare.com"],
+	a[href *= "sevenload.com/bilder/"] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_pic.gif') no-repeat scroll 0 50%;
+		}
+
+/* extensions */
+	a[href $= '.doc'],
+	a[href $= '.rtf'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_doc.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.txt'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_txt.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.xls'] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_xls.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.rss'],
+	a[href $= '.atom'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_feed.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.opml'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_opml.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.phps'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_phps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.phps'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_phps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.torrent'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_torrent.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.vcard'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_vcard.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.exe'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_exe.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.dmg'],
+	a[href $= '.app'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_dmg.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.pps'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_pps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.pdf'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_pdf.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.xpi'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_plugin.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.fla'],
+	a[href $= '.swf'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_flash.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.zip'],
+	a[href $= '.rar'],
+	a[href $= '.gzip'],
+	a[href $= '.bzip'],
+	a[href $= '.ace'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_archive.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.ical'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_ical.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.css'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_css.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.ttf'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_ttf.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.jpg'],
+	a[href $= '.gif'],
+	a[href $= '.png'],
+	a[href $= '.bmp'],
+	a[href $= '.tif'],
+	a[href $= '.jpeg'],
+	a[href $= '.svg'],
+	a[href $= '.eps'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_pic.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.mov'],
+	a[href $= '.wmv'],
+	a[href $= '.mp4'],
+	a[href $= '.avi'],
+	a[href $= '.mpg'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_film.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.mp3'],
+	a[href $= '.wav'],
+	a[href $= '.ogg'],
+	a[href $= '.wma'],
+	a[href $= '.m4a'] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_music.gif') no-repeat scroll 0 50%;
+		}
+
+/* messenger */
+	a[href ^="aim:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_aim.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="msnim:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_msn.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="xmpp:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_jabber.gif') no-repeat scroll 0 50%;
+		}
+	a[href *= "icq.com"] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_icq.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="ymsgr:"],
+	a[href *= "edit.yahoo.com/config/send_webmesg?"] { 
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_yim.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="gtalk:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/google.png') no-repeat scroll 0 50%;
+		}
+	a[href ^="callto:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_call.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="skype:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_skype.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="gg:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_gadugadu.gif') no-repeat scroll 0 50%;
+		}
+
+/* email */
+	a[href ^="mailto:"] {
+		padding: 5px 0 5px 18px;
+		background: url('../images/iconify/ico_mailto.gif') no-repeat scroll 0 50%;
+		}
+
+/* use this class to make sure that images won't get iconized */
+	.imageLink {
+		padding-left: 0px !important;
+		background: none !important;
+		}

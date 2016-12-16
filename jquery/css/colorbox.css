@@ -1,0 +1,100 @@
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background: #ddd;}
+#colorbox{
+	margin: -1px;
+	border: 1px solid #ccc;
+	background: #fff;
+	
+	font-size: .85em;
+	line-height: 1.1em;
+	color: #7d7d7d;
+}
+    #cboxContent{margin-top: 0px;}
+        #cboxLoadedContent {
+			padding: 5px;
+			background: #fff;
+		}
+		#cboxLoadedContent img {
+			padding: 20px;
+			background: #ccc;
+			}
+        #cboxTitle,
+        #cboxCurrent,
+        #cboxSlideshow {
+			position: absolute;
+			top: 10px;
+		}
+		#cboxTitle{
+			top: 25px;
+			left: 0;
+			padding: 5px 5px 4px 8px;
+			background: #fff;
+		}
+        #cboxCurrent {
+			top: auto;
+			right: 39px;
+			bottom: 8px;
+			
+			text-shadow: #7d7d7d 1px 2px 2px;
+			color: #fff;
+		}
+        #cboxSlideshow {
+			position: absolute;
+			top: auto;
+			bottom: 8px;
+			left: 10px;
+			z-index: 101;
+			
+			text-shadow: #7d7d7d 1px 2px 2px;
+			color: #fff;
+		}
+        #cboxPrevious,
+		#cboxNext {
+			position: absolute;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			background: transparent no-repeat scroll 0 50%;
+			
+			text-indent: -9999px;
+		}
+		#cboxPrevious{}
+        #cboxPrevious.hover {background-image: url('../img/colorbox/previous.png');}
+        #cboxNext{
+			right: 0;
+			background-position: right 50%;
+		}
+		#cboxNext.hover {background-image: url('../img/colorbox/next.png');}
+		#cboxLoadingOverlay {background: #fff;}
+		#cboxLoadingGraphic {background: url('../img/colorbox/loading.gif') no-repeat 50% 50%;}
+		#cboxClose{
+			display: block;
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+			width: 34px;
+			height: 24px;
+			background: url('../img/colorbox/close.png') no-repeat scroll 50% bottom;
+			
+			text-indent: -9999px;
+		}
+		#cboxClose.hover{}

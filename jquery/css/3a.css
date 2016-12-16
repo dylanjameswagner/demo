@@ -1,0 +1,12 @@
+#demo_colorbox { padding-top: 10px; }
+#demo_colorbox li {
+	float: left;
+	padding: 5px 5px 1px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	list-style: none;
+	text-indent: 0;
+	}
+#demo_colorbox li:first-child { margin-left: 0; }
+#demo_colorbox li:hover,
+#demo_colorbox li:active { background-color: #eee; }
+#demo_colorbox li a { border: none; }

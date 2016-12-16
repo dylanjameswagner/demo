@@ -1,0 +1,19 @@
+/* login.css */
+
+	h1 {
+		background: url("../images/logo-login.png") no-repeat scroll 50% 50%; }
+	h1 a {
+		visibility: hidden; }
+
+	form {
+		margin-left: 0; }
+
+	#nav,
+	#backtoblog {
+		margin-left: 10px; }
+/* #nav {
+		float: right;
+		margin: 0 10px 0 0; }
+	#backtoblog {
+		padding-top: 16px; }
+*/

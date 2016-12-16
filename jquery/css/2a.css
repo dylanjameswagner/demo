@@ -1,0 +1,13 @@
+#demo_nav { height: 60px; }
+#demo_nav li {
+	float: left;
+	margin: 0;
+	text-indent: 0;
+	}
+#demo_nav li a {
+	display: block;
+	background: grey;
+	padding: 10px;
+	}
+#demo_nav li a:hover,
+#demo_nav li a:active { color: #000; }

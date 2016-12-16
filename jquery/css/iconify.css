@@ -1,0 +1,286 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// iconify.css // use with iconize images
+	
+	// based on iconize.css 0.5
+
+*/
+
+/* external */
+	a {
+		padding: 0 13px 0 0;
+		background: url('../img/common/a-external.png') no-repeat scroll right -2px;
+		}
+
+/* internal */
+	a[href *= "#"] {
+		padding: 5px 0 5px 16px;
+		background: url('../img/iconify/hash.gif') no-repeat scroll 0 50%;
+		}
+
+/* reset */
+	a:hover, div.post a:active {background-position: right -16px;}
+	a[href = ""],
+	a[href = "#"],
+	a[href *= "#"],
+	a[href ^= "./"],
+	a[href ^= "/"],
+	a[href ^= "javascript:"],
+	a[href ^= "mailto:"],
+	a[href ^= "callto:"],
+	a[href *= "#header"],
+	a[href *= "dylanjameswagner.com"],
+	a[href *= "point2pointdesign.com"],
+	a[href *= "studiovbdesign.com"],
+	a[href *= "addthis.com"] {
+		padding: 0;
+		background: none;
+		}
+		#developer a,
+		.previews .shopp-thickbox,
+		.post_content a[href *= "flickr.com"] {padding: 0; background: none;}
+
+/* alert */
+	a[href = ""],
+	a[href = "/"],
+	a[href = "./"],
+	a[href = "#"],
+	a[href = "mailto:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/alert.png') no-repeat scroll 0 50%;
+		text-shadow: #000 -1px 1px 0;
+		color: #ffae00;
+		}
+	a[href = ""]:hover,
+	a[href = "/"]:hover
+	a[href = "./"]:hover,
+	a[href = "#"]:hover,
+	a[href = "mailto:"]:hover,
+	a[href = ""]:active,
+	a[href = "/"]:active,
+	a[href = "./"]:active,
+	a[href = "#"]:active,
+	a[href = "mailto:"]:active {
+		text-shadow: #555 -1px 1px 0;
+		}
+
+/* respond */
+	/* a[href *= "#respond"] {
+		float: left;
+		display: inline-block;
+		width: 0;
+		padding: 5px 0 5px 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		} */
+
+/* tld(s) */
+	a[href *= ".mobi"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/mobile.png') no-repeat scroll 0 3px;
+		}
+
+/* wordpress */
+	a.post-edit-link,
+	p.comment_edit a {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/page_edit.png') no-repeat scroll 0 50%;
+		}
+	a[href = '#respond'],
+	p.comment_reply a {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/comment.png') no-repeat scroll 0 50%;
+		}
+	a[href *= 'wp-login.php?action=logout'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/logout.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '/trackback/'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/link.png') no-repeat scroll 0 50%;
+		}
+	a[href $= '/feed/'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/rss.png') no-repeat scroll 0 50%;
+		}
+
+/* sites (pictures & movies) */
+	a[href *= "youtube.com/watch?"],
+	a[href *= "sevenload.com/videos/"],
+	a[href *= "metacafe.com/watch/"] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_film.gif') no-repeat scroll 0 50%;
+		}
+	a[href *= "flickr.com/photos/"],
+	a[href *= "zooomr.com"],
+	a[href *= "imageshack.us"],
+	a[href *= "bubbleshare.com"],
+	a[href *= "sevenload.com/bilder/"] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_pic.gif') no-repeat scroll 0 50%;
+		}
+
+/* extensions */
+	a[href $= '.doc'],
+	a[href $= '.rtf'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_doc.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.txt'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_txt.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.xls'] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_xls.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.rss'],
+	a[href $= '.atom'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_feed.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.opml'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_opml.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.phps'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_phps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.phps'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_phps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.torrent'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_torrent.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.vcard'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_vcard.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.exe'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_exe.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.dmg'],
+	a[href $= '.app'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_dmg.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.pps'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_pps.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.pdf'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_pdf.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.xpi'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_plugin.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.fla'],
+	a[href $= '.swf'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_flash.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.zip'],
+	a[href $= '.rar'],
+	a[href $= '.gzip'],
+	a[href $= '.bzip'],
+	a[href $= '.ace'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_archive.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.ical'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_ical.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.css'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_css.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.ttf'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_ttf.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.jpg'],
+	a[href $= '.gif'],
+	a[href $= '.png'],
+	a[href $= '.bmp'],
+	a[href $= '.tif'],
+	a[href $= '.jpeg'],
+	a[href $= '.svg'],
+	a[href $= '.eps'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_pic.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.mov'],
+	a[href $= '.wmv'],
+	a[href $= '.mp4'],
+	a[href $= '.avi'],
+	a[href $= '.mpg'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_film.gif') no-repeat scroll 0 50%;
+		}
+	a[href $= '.mp3'],
+	a[href $= '.wav'],
+	a[href $= '.ogg'],
+	a[href $= '.wma'],
+	a[href $= '.m4a'] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_music.gif') no-repeat scroll 0 50%;
+		}
+
+/* messenger */
+	a[href ^="aim:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_aim.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="msnim:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_msn.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="xmpp:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_jabber.gif') no-repeat scroll 0 50%;
+		}
+	a[href *= "icq.com"] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_icq.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="ymsgr:"],
+	a[href *= "edit.yahoo.com/config/send_webmesg?"] { 
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_yim.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="gtalk:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/google.png') no-repeat scroll 0 50%;
+		}
+	a[href ^="callto:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_call.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="skype:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_skype.gif') no-repeat scroll 0 50%;
+		}
+	a[href ^="gg:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_gadugadu.gif') no-repeat scroll 0 50%;
+		}
+
+/* email */
+	a[href ^="mailto:"] {
+		padding: 5px 0 5px 20px;
+		background: url('../img/iconify/ico_mailto.gif') no-repeat scroll 0 50%;
+		}
+
+/* use this class to make sure that images won't get iconized */
+	.imageLink {
+		padding-left: 0px !important;
+		background: none !important;
+		}

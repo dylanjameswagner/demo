@@ -1,0 +1,9 @@
+## restrict access to .ht files
+<Files ~ "^\.ht">
+    order allow,deny
+    deny from all
+    satisfy all
+</Files>
+
+Options All +Indexes +MultiViews +FollowSymLinks
+DirectoryIndex index.html index.htm index.php

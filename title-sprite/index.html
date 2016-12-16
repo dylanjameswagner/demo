@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi"/>
+
+	<meta name="apple-mobile-web-app-capable" content="default"/>
+
+	<title>header-background</title>
+
+	<style>
+
+/* demo setup */
+
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box; /* inset padding */ }
+
+	body {
+		max-width: 768px; }
+
+/* demo specific */
+
+	.page-title,
+	.page-title:after {
+		background: url('./-/images/page-title.sprite.png') no-repeat 0 0; }
+
+	.page-title {
+		box-sizing: content-box;
+		display: inline-block; /* inline-block OR float to use flexible width */
+		position: relative;
+		min-height: 95px; max-width: 655px;
+		margin-right: 19px; padding: 0 11px 0 30px;
+		font-size: 27px;
+		line-height: 78px;
+		color: #fff; }
+	.page-title:after {
+		content: '';
+		display: block;
+		position: absolute; top: 0; right: -19px;
+		width: 19px; height: 100%;
+		background-position: right 0; }
+
+	/* sprite adjust - option 1 - high level class */
+	.page-23		.page-title, /* home page ID ? */
+	#page-home		.page-title { background-position: 0  -95px; }
+	#page-about		.page-title { background-position: 0 -190px; }
+	#page-gallery	.page-title { background-position: 0 -285px; }
+	#page-faq 		.page-title { background-position: 0 -380px; }
+	#page-contact	.page-title { background-position: 0 -475px; }
+
+	#page-home		.page-title:after { background-position: right  -95px; }
+	#page-about		.page-title:after { background-position: right -190px; }
+	#page-gallery	.page-title:after { background-position: right -285px; }
+	#page-faq 		.page-title:after { background-position: right -380px; }
+	#page-contact	.page-title:after { background-position: right -475px; }
+
+	/* sprite adjust - option 2 - multiple class name */
+	.page-title.home	{ background-position: 0  -95px; }
+	.page-title.about 	{ background-position: 0 -190px; }
+	.page-title.gallery	{ background-position: 0 -285px; }
+	.page-title.faq		{ background-position: 0 -380px; }
+	.page-title.contact	{ background-position: 0 -475px; }
+
+	.page-title.home:after		{ background-position: right  -95px; }
+	.page-title.about:after		{ background-position: right -190px; }
+	.page-title.gallery:after	{ background-position: right -285px; }
+	.page-title.faq:after		{ background-position: right -380px; }
+	.page-title.contact:after	{ background-position: right -475px; }
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1 class="page-title home">Home</h1 class="page-title">
+	<h1 class="page-title about">About</h1 class="page-title">
+	<h1 class="page-title gallery">Gallery</h1 class="page-title">
+	<h1 class="page-title faq">FAQ</h1 class="page-title">
+	<h1 class="page-title">Frequnetly Asked Questions</h1 class="page-title">
+	<h1 class="page-title contact">Contact</h1 class="page-title">
+
+</body>
+</html>

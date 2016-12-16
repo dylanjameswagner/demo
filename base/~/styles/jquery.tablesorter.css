@@ -1,0 +1,21 @@
+/* jquery.tablesorter.css */
+
+	.tablesorter {}
+	.tablesorter thead tr th {
+		background-image: url('../images/jquery.tablesorter/controls.png');
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: right 50%; }
+	.tablesorter thead tr th,
+	.tablesorter thead tr th * {
+		cursor: pointer; }
+	.tablesorter thead tr th:hover {
+		text-decoration: underline; }
+	.tablesorter thead tr:first-child > * {}
+	.tablesorter thead tr .headerSortUp {
+		background-position: right 6px; }
+	.tablesorter thead tr .headerSortDown {
+		background-position: right -53px; }
+	.tablesorter thead tr .headerSortDown,
+	.tablesorter thead tr .headerSortUp {
+		background-color: rgba(0,0,0,.07); }

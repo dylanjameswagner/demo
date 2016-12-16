@@ -1,0 +1,30 @@
+tr.alt td,
+tr.odd td {}
+tr.even td { background: none; }
+thead tr td select {
+	margin: 4px 0; 
+	font-weight: normal;
+	}
+tbody tr:hover th, 
+tbody tr:hover td,
+tbody tr.odd:hover td,
+tbody tr:hover th a {
+	background: #333 !important;
+	color: #bf7326 !important;
+	}
+tbody th,
+tbody td {
+	font-size: .8em;
+	white-space: nowrap;
+	}
+tbody th {
+	border: 1px solid #333;
+	text-align: right;
+	}
+tbody th a {
+	text-decoration: none;
+	font-weight: bold;
+	}
+#filters td select { width: 100%; }
+form { margin: 0; }
+
