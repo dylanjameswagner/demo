@@ -43,16 +43,15 @@
 			margin-top: 1em;
 		}
 
-		:first-child {
-			margin-top: 0;
-		}
-
 		a {
 			text-decoration: none;
 		}
-
 		a:hover {
 			text-decoration: underline;
+		}
+
+		:first-child {
+			margin-top: 0;
 		}
 
 		.site {
@@ -70,6 +69,19 @@
 			padding: 1em;
 			border: 1px solid;
 			color: #000;
+		}
+		.card:hover {
+			background: #eee;
+			text-decoration: none;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 0.6em;
+			background-color: #ccc;
+		}
+		.button:hover {
+			text-decoration: underline;
 		}
 
 	</style>
@@ -91,10 +103,13 @@
 			<p class="content__image" style="background-image: url('//placehold.it/1400x300');"></p>
 			<main class="primary">
 				<a class="card" href="#">
-					<h1 class="primary__heading">Content</h1>
-					<p>Sed posuere consectetur est at lobortis.</p>
+					<h1 class="card__heading">Content</h1>
+					<div class="card__content">
+						<p>Sed posuere consectetur est at lobortis.</p>
+					</div>
+					<p class="card__action"><span class="button">Button</span></p>
 				</a>
-				<a href="#">Edit</a>
+				<p class="primary__edit"><a href="#">Edit Primary</a></p>
 			</main>
 		</section>
 		<footer class="footer">
