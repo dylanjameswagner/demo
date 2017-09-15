@@ -1,0 +1,12 @@
+demo:
+  build: .
+  container_name: demo
+  volumes:
+    - .:/var/www/public
+  working_dir: /var/www/public
+  external_links:
+    - mariadb:mariadb
+  environment:
+    - SHELL=bash
+    - VIRTUAL_HOST=demo.colab
+    - COLAB_VERSION=1.0
