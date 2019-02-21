@@ -25,7 +25,6 @@ RewriteEngine On
 RewriteBase /
 RewriteOptions inherit
 
-
 # redirect all index files
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php\ HTTP/
 # RewriteRule ^(([^/]+/)*)index\.php$ http://domain.tld/$1 [R=301,L]
