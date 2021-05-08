@@ -12,7 +12,7 @@
 
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./-/images/apple-touch-icon-144x144-precomposed.png"/>
 
-	<link rel="stylesheet" href="./-/styles/core.css"/>
+	<!-- <link rel="stylesheet" href="./-/styles/core.css"/> -->
 	<link rel="stylesheet" href="./-/styles/custom.css"/>
 
 	<script src="./-/scripts/html5shiv.printshiv-3.6.2.min.js"></script>
