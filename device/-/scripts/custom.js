@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 
 		var width	= Math.max($('#content').outerWidth(),document.body.clientWidth),
 			height	= Math.max($('#content').outerHeight(),body.scrollHeight, body.offsetHeight,html.clientHeight, html.scrollHeight, html.offsetHeight);
-		
+
 		$('.measurements .document').text(width + ' × ' + height);
 
 	});
