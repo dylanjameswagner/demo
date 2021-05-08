@@ -2,6 +2,9 @@
 
 /* base */
 
+	* {
+		box-sizing: border-box; /* inset padding */ }
+
 	table {
 		border-collapse: collapse;
 		border: 0; }
