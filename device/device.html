@@ -76,13 +76,12 @@
                 content: "landscape";
             }
         }
-        
     </style>
 </head>
 <body>
     <h1>Device reporter</h1>
     <noscript>
-      <p>Sorry mate, you need a JavaScript enabled browser to run these tests.</p>
+        <p>Sorry mate, you need a JavaScript enabled browser to run these tests.</p>
     </noscript>
     <p>
         <strong>User Agent:</strong>
@@ -133,7 +132,6 @@
             <td>
                 <script>
                   var ratio = ('devicePixelRatio' in window) ? devicePixelRatio : 1;
-            
                   document.write(Math.ceil(ratio * screen.width));
                   document.write(' x ');
                   document.write(Math.ceil(ratio * screen.height));
