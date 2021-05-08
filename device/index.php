@@ -51,31 +51,31 @@
             <table class="dimensions">
                 <caption>Mobile CSS Measurments</caption>
                 <thead>
-                    <tr><th>Device</th>                                                                    <th>Screen</th>      <th>Viewport</th>      <th>Ratio</th> <th>Browser</th>                     <th>Orientation</th></tr>
+                    <tr><th>Device</th>                                                                    <th>Screen</th>      <th>Viewport</th>      <th>Ratio</th> <th>Browser</th></tr>
                 </thead>
                 <tbody>
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone 11 Pro</th>      <td>375 × 812</td>  <td>375 × 635</td>      <td>@3x</td>    <td><small>Safari on iOS 14.4.2</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 11 Pro</th>     <td>812 × 375</td>  <td>724 × 292*</td>     <td>@3x</td>    <td><small>Safari on iOS 14.4.2</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 11 Pro</th>     <td>375 × 812</td>   <td>375 × 635-749</td> <td>@3x</td>   <td><small>Safari on iOS 14.4.2</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 11 Pro</th>     <td>812 × 375</td>   <td>724 × 292-375</td> <td>@3x</td>   <td><small>Safari on iOS 14.4.2</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone XR</th>          <td>414 × 896</td>  <td>414 × 635</td>      <td>@2x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone XR</th>         <td>896 × 414</td>  <td>724 × 414*</td>     <td>@2x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone XR</th>         <td>414 × 896</td>   <td>414 × 635</td>     <td>@2x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone XR</th>         <td>896 × 414</td>   <td>724 × 414*</td>    <td>@2x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone XS Max</th>      <td>414 × 896</td>  <td>414 × 635</td>      <td>@3x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone XS Max</th>     <td>896 × 414</td>  <td>724 × 414*</td>     <td>@3x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone XS Max</th>     <td>414 × 896</td>   <td>414 × 635</td>     <td>@3x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone XS Max</th>     <td>896 × 414</td>   <td>724 × 414*</td>    <td>@3x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone X/XS</th>        <td>375 × 812</td>  <td>375 × 635</td>      <td>@3x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone X/XS</th>       <td>812 × 375</td>  <td>724 × 375*</td>     <td>@3x</td>    <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone X/XS</th>       <td>375 × 812</td>   <td>375 × 635</td>     <td>@3x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone X/XS</th>       <td>812 × 375</td>   <td>724 × 375*</td>    <td>@3x</td>   <td><small>Safari on iOS 12.1.4</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone 6/7/8 Plus</th>  <td>414 × 736</td>   <td>414 × 622</td>     <td>@3x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 6/7/8 Plus</th> <td>414 × 736</td>   <td>414 × 622</td>     <td>@3x</td>   <td><small>iOS ? Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 6/7/8 Plus</th> <td>736 × 414</td>   <td>736 × 331-414</td> <td>@3x</td>   <td><small>iOS ? Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone 6/7/8</th>       <td>375 × 667</td>   <td>375 × 559</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 6/7/8</th>      <td>375 × 667</td>   <td>375 × 559</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 6/7/8</th>      <td>667 × 375</td>   <td>667 × 331</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone 5</th>           <td>320 × 568</td>   <td>320 × 460</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 5</th>          <td>320 × 568</td>   <td>320 × 460</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 5</th>          <td>568 × 320</td>   <td>568 × 212</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPhone 1/2/3/4</th>     <td>320 × 480</td>   <td>320 × 372</td>     <td>@1x</td>   <td><small>iOS 7 Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 1/2/3/4</th>    <td>320 × 480</td>   <td>320 × 372</td>     <td>@1x</td>   <td><small>iOS 7 Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 1/2/3/4</th>    <td>480 × 320</td>   <td>480 × 212</td>     <td>@1x</td>   <td><small>iOS 7 Safari</small></td></tr>
                 </tbody>
                 <tfoot>
@@ -88,20 +88,20 @@
             <table class="dimensions">
                 <caption>Tablet CSS Measurments</caption>
                 <thead>
-                    <tr><th>Device</th>                                                                    <th>Screen</th>      <th>Viewport</th>      <th>Ratio</th> <th>Browser</th>                     <th>Orientation</th></tr>
+                    <tr><th>Device</th>                                                                    <th>Screen</th>      <th>Viewport</th>     <th>Ratio</th> <th>Browser</th></tr>
                 </thead>
                 <tbody>
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPad</th>               <td>768 × 1024</td>  <td>768 × 928</td>     <td>@2x</td>   <td><small>iOS 7 Safari</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad</th>              <td>1024 × 768</td>  <td>1024 × 672</td>    <td>@2x</td>   <td><small>iOS 7 Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPad</th>              <td>768 × 1024</td>  <td>768 × 928</td>    <td>@2x</td>   <td><small>iOS 7 Safari</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad</th>              <td>1024 × 768</td>  <td>1024 × 672</td>   <td>@2x</td>   <td><small>iOS 7 Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPad Mini</th>          <td>768 × 1024</td>  <td>768 × 928</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Mini</th>         <td>1024 × 768</td>  <td>1024 × 671</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPad Mini</th>         <td>768 × 1024</td>  <td>768 × 928</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Mini</th>         <td>1024 × 768</td>  <td>1024 × 671</td>   <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPad Pro 12.9"</th>     <td>1024 × 1366</td> <td>1024 × ???</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Pro 12.9"</th>    <td>1366 × 1024</td> <td>??? × 1024</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPad Pro 12.9"</th>    <td>1024 × 1366</td> <td>1024 × ???</td>   <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Pro 12.9"</th>    <td>1366 × 1024</td> <td>??? × 1024</td>   <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
-                    <tr><th><span class="glyph portrait"  title="portrait"></span> iPad Pro 10.5</th>      <td>1112 × 834</td> <td>1112 × ???</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
-                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Pro 10.5</th>     <td>834 × 1112</td> <td>??? × 1112</td>    <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPad Pro 10.5</th>     <td>1112 × 834</td>  <td>1112 × ???</td>   <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPad Pro 10.5</th>     <td>834 × 1112</td>  <td>??? × 1112</td>   <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
                 </tbody>
                 <tfoot>
                     <tr><td colspan="6">
@@ -113,7 +113,7 @@
             <table class="dimensions">
                 <caption>Laptop CSS Measurements</caption>
                 <thead>
-                    <tr><th>Device</th>                                                               <th>Screen</th>      <th>Viewport</th>         <th>Ratio</th> <th>Browser</th>                     <th>Orientation</th></tr>
+                    <tr><th>Device</th>                                                               <th>Screen</th>      <th>Viewport</th>         <th>Ratio</th> <th>Browser</th></tr>
                 </thead>
                 <tbody>
                     <tr><th><span class="glyph landscape" title="landscape"></span> MacBook Pro</th>  <td>1920 × 1200</td> <td>1920 × 1089-1112</td> <th>@2x</th>   <td><small>Safari 12</small></td></tr>
