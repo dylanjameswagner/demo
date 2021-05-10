@@ -72,6 +72,9 @@
                     <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 6/7/8</th>      <td>375 × 667</td>   <td>375 × 559</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 6/7/8</th>      <td>667 × 375</td>   <td>667 × 331</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
+                    <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone SE</th>         <td>320 × 568</td>   <td>320 × 454-529</td> <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+                    <tr><th><span class="glyph landscape" title="landscape"></span> iPhone SE</th>         <td>568 × 320</td>   <td>568 × ???</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
+
                     <tr><th><span class="glyph portrait"  title="portrait"></span>  iPhone 5</th>          <td>320 × 568</td>   <td>320 × 460</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
                     <tr><th><span class="glyph landscape" title="landscape"></span> iPhone 5</th>          <td>568 × 320</td>   <td>568 × 212</td>     <td>@2x</td>   <td><small>iOS ? Safari</small></td></tr>
 
