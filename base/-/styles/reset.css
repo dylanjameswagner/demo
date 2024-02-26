@@ -1,0 +1,64 @@
+/* reset.css */
+
+/* basic */
+
+	html, body, div, span, center, font,
+	h1, h2, h3, h4, h5, h6, p,
+	blockquote, cite, abbr, acronym, address,
+	pre, code, var, dfn, bdo, kbd, samp, tt,
+	dl, dt, dd, ol, ul, li,
+	img, br, hr, area, map,
+	a, i, b, u, em, strong, q, s,
+	strike, del, ins, small, big, sub, sup,
+	applet, object, param, embed, iframe,
+	script, noscript, ruby,
+	form, fieldset, legend, label,
+	table, caption, thead, tfoot, tbody, tr, th, td, col,
+	section, article, aside, header, footer, hgroup,
+	menu, nav, output, ruby,
+	canvas, figure, figcaption, summary, details,
+	audio, video, time, mark {
+		margin: 0; padding: 0;
+		border: 0;
+		font: inherit;
+		font-size: 100%;
+		vertical-align: baseline; }
+
+	input, select, textarea, button, option, optgroup {}
+
+	section, article, aside, details, header, footer, hgroup,
+	menu, nav, figure, figcaption,
+	audio, video {
+		display: block; }
+	canvas {
+		display: inline-block; }
+	audio:not([controls]) {
+		display: none; }
+
+	html {
+		overflow-y: scroll;
+		text-size-adjust: 100%; }
+
+	body {
+		line-height: 1.2em; }
+	ol, ul, li {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before,
+	blockquote:after,
+	q:before,
+	q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+	caption, th, td {
+		font-weight: normal;
+		text-align: left; }
+
+/* pseudo classes */
+
+	:focus {
+		outline: thin dotted; }

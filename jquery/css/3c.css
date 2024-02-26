@@ -1,0 +1,20 @@
+#demo_scroller {
+	width: 582px; height: 140px;
+	margin: 30px 9px; padding-top: 14px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	background: #eee;
+	overflow: hidden;
+	}
+#demo_scroller ul {
+	width: 866px; height: 140px;
+	margin: 0;
+	}
+#demo_scroller ul li {
+	float: left;
+	margin: 0;
+	padding: 0 0 8px 14px;
+	list-style: none;
+	text-indent: 0;
+	}
+#demo_scroller ul li:first-child {}
+#demo_scroller ul li img {}

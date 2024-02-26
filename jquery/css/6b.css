@@ -1,0 +1,19 @@
+.fl { margin: 5px 19px 10px 9px; }
+.stars label { display: inline; }
+
+.stars p a {
+	display: inline-block;
+	width: 12px; height: 23px;
+	padding-left: 3px;
+	background: url('../img/demo/demo_rating.png') no-repeat scroll 3px 0;
+	overflow: hidden;
+	text-indent: -999em;
+	}
+.stars p a.rating-right {
+	padding: 0 3px 0 0;
+	background-position: 0 -23px;
+	}
+.stars p a.rating-over { background-position: 3px -46px; }
+.stars p a.rating-over.rating-right { background-position: 0 -69px; }
+.stars p a.rating { background-position: 3px -92px; }
+.stars p a.rating.rating-right { background-position: 0 -115px; }

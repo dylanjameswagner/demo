@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Reporter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <style type="text/css">
+        /* Specify viewport width for IE10+ and Opera
+         * When viewport < 400px */
+        @-ms-viewport { width: device-width; }
+        @viewport     { width: device-width; }
+        html {
+          font: 100%/1.3 Helvetica, sans-serif;
+          color: #201F1F;
+          background: #fff;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+          thead {
+            background: #B3B4B2;
+          }
+            thead th:first-child {
+              background: #636463;
+              color: #fff;
+            }
+          p,
+          th,
+          td {
+            padding: .66em;
+            vertical-align: top;
+          }
+          th {
+            text-align: left;
+          }
+          td {
+            color: #4E4F4E;
+            text-align: right;
+            white-space: nowrap;
+          }
+
+          /* Borders between the cells of a same row */
+          th + th, /* Adjacent selector, unsupported in IE<7 http://www.quirksmode.org/css/contents.html */
+          td {
+            border-left: 1px solid white;
+          }
+
+          /* Differenciate alternate rows */
+          tbody tr:nth-child(even) {
+            /*
+              Unsupported in IE<9
+              <http://caniuse.com/#search=nth-child>
+              We may want to use a polyfill like selectivizr
+              Or add .odd/.even classes to the alternate rows if possible
+            */
+            background: #E3E3E2;
+          }
+        code {
+          font-family: Monaco, monospace;
+        }
+        @media (orientation: portrait)
+        {
+            #orientation:before
+            {
+                content: "portrait";
+            }
+        }
+
+        @media (orientation: landscape)
+        {
+            #orientation:before
+            {
+                content: "landscape";
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Device reporter</h1>
+    <noscript>
+        <p>Sorry mate, you need a JavaScript enabled browser to run these tests.</p>
+    </noscript>
+    <p>
+        <strong>User Agent:</strong>
+
+        <script>
+            document.write(navigator.userAgent);
+        </script>
+    </p>
+    <table>
+        <tr>
+            <th>Reported window size</th>
+            <td>
+                <script>
+                    document.write(window.innerWidth);
+                </script>
+                x
+                <script>
+                    document.write(window.innerHeight);
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Reported document size</th>
+            <td>
+                <script>
+                    document.write(document.documentElement.clientWidth);
+                </script>
+                x
+                <script>
+                    document.write(document.documentElement.clientHeight);
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Reported device size*</th>
+            <td>
+                <script>
+                    document.write(screen.width);
+                </script>
+                x
+                <script>
+                    document.write(screen.height);
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Guessed physical device dimensions</th>
+            <td>
+                <script>
+                  var ratio = ('devicePixelRatio' in window) ? devicePixelRatio : 1;
+                  document.write(Math.ceil(ratio * screen.width));
+                  document.write(' x ');
+                  document.write(Math.ceil(ratio * screen.height));
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Pixel ratio</th>
+            <td>
+                <script>
+                    document.write(ratio);
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Orientation</th>
+            <td><span id="orientation"></span></td>
+        </tr>
+    </table>
+    <p>* In many cases, these measurements don't really match the real dimensions of the device. For example in Android 4, the reported screen size is <code>screen size — toolbar</code>.</p>
+    <p>WTF, right?</p>
+</body>
+</html>

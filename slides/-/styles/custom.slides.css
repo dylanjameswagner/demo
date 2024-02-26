@@ -1,0 +1,193 @@
+/* custom.slides.css */
+
+/* slides */
+
+	#slides * {
+		box-sizing: border-box; }
+
+	#slides {
+		position: relative;
+		background-color: #000;
+		color: #fff; }
+	#slides a {
+		color: inherit; }
+
+	.slides {
+		position: relative; z-index: 1;
+		margin: 0 auto;
+		overflow: hidden; }
+	.slides:hover,
+	.slides-inner:hover {
+		`cursor: not-allowed;
+		`cursor: url(images/cursor.cur);
+		`cursor: url(images/cursor.png) x y, auto; }
+
+/* slide */
+
+	.slide {
+		position: absolute; top: 0; left: 0; z-index: 1;
+		width: 100%;
+		margin: 0; padding: 0;
+		background-color: #000;
+		overflow: hidden; }
+	.slide:first-child {}
+	.slide a {
+		`color: inherit; }
+
+	.slide.active,
+	.slide.pending {}
+	.slide.active {
+		z-index: 3; }
+	.slide.pending {
+		position: relative; z-index: 2; }
+
+	.slide-image {
+		position: relative;
+		margin: 0;
+		overflow: hidden; }
+	.slide-image img {
+		display: block;
+		width: 100%; height: auto;
+		max-width: 100%; }
+
+	.slide-text {
+		position: absolute; bottom: 0;
+		width: 100%;
+		padding: 2.5% 5%; }
+	.slide-text-inner {}
+	.slide-title {
+		text-transform: uppercase;
+		font-size: 38px;
+		line-height: 1; }
+	.slide-content {
+		padding-bottom: 6px;
+		font-size: 18px; }
+	.slide-title a,
+	.slide-content a {
+		text-decoration: none;
+		color: inherit; }
+	.slide-title a:hover {
+		text-decoration: none; }
+	.slide-action {}
+	.slide-action a {
+		display: inline-block; }
+	.slide-action .button {}
+	.slide-edit {
+		position: absolute; top: 0; right: 0;
+		margin: 2.5% 5%; }
+
+/* slide transition */
+
+	.simple .slide,
+	.simple .slide.pending {
+		display: none; }
+	.simple .slide.active {
+		display: block;
+		position: relative; }
+
+	.transition .slide.active,
+	.transition .slide.previous,
+	.transition .slide-menu-item {
+		transition: opacity 2s linear; }
+
+	.fade-out .slide.active,
+	.fade-out .slide.previous {
+		transition: opacity 2s linear; }
+	.fade-out .slide {
+		opacity: 0; }
+	.fade-out .slide.active {
+		opacity: 1; }
+	.fade-out .slide.previous {
+		opacity: 1; }
+
+	.shift .slide.active,
+	.shift .slide.previous {
+		transition: margin-left 1.5s ease-in-out; }
+	.shift .slide,
+	.shift .slide.previous.pending {
+		margin-left: 100%; }
+	.shift .slide.active,
+	.shift .slide.newactive,
+	.shift .slide.previous.active {
+		margin-left: 0; }
+	.shift .slide.previous {
+		margin-left: -100%; }
+
+	.shift.offset .slide.active,
+	.shift.offset .slide.previous,
+	.shift.offset .slide-text {
+		transition: margin-left 1.75s ease-in-out; }
+	.shift.offset .slide-text {
+		width: 100%; }
+	.shift.offset .slide.pending .slide-text,
+	.shift.offset .slide.previous.pending .slide-text {
+		margin-left: 33.333%; }
+	.shift.offset .slide.active .slide-text,
+	.shift.offset .slide.previous.active .slide-text {
+		margin-left: 0;
+		opacity: 1; }
+	.shift.offset .slide.previous .slide-text {
+		margin-left: -25%; }
+
+	.shift.offset.fade-in .slide {
+		`opacity: 1; }
+	.shift.offset.fade-in .slide-text {
+		transition: margin-left 1.75s ease-in-out, opacity 1.75s ease-in-out; }
+	.shift.offset.fade-in .slide.pending .slide-text {
+		opacity: 0; }
+	.shift.offset.fade-in .slide.active .slide-text {
+		opacity: 1; }
+
+	.drop .slide {
+		margin-top: 0; }
+	.drop .slide.pending {
+		opacity: 1; }
+	.drop .slide.active {}
+	.drop .slide.previous {
+		margin-top: 200%;
+		opacity: 0; }
+
+	.none .slide {}
+	.none .slide.active,
+	.none .slide.previous,
+	.none .slide-text,
+	.none .slide-selector-item {
+		transition: none !important; }
+
+	.none .slide.active {
+		`position: relative; }
+	.none .slide.pending {
+		`position: absolute; }
+
+/* slide-menu */
+
+	.slide-menu {
+		position: relative; z-index: 3;
+		margin: 0 auto; padding: 2.5% 5%;
+		text-align: center; }
+	.slide-menu-list {
+		margin: 0 auto; padding: 0; }
+	.slide-menu-item {
+		display: inline-block;
+		margin: 0; }
+	.slide-menu-item + .slide-menu-item {
+		margin-left: 10px; }
+
+	.slide-menu a {
+		display: block; }
+	.slide-menu a:hover {}
+	.slide-menu a .meta-direction {}
+	.slide-menu a .meta-title {}
+
+/* media-queries max-width */
+
+@media only screen and (max-width: 1023px){}
+
+@media only screen and (max-width: 767px){}
+
+@media only screen and (max-width: 479px){}
+
+/* media-queries @2x */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	   only screen and (min-device-pixel-ratio: 2){}

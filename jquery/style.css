@@ -1,0 +1,153 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// style.css
+
+*/
+
+.no-script { display: none; }
+
+/* common */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #bf7326;
+		}
+	dt { color: #bf7326; }
+	a { color: #ccc; }
+	a:hover,
+	a:active {
+		text-decoration: underline;
+		color: #bf7326;
+		}
+	pre {
+		margin: 10px 9px;
+		border-width: 2px; border-color: #666;
+		-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+		-moz-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000;
+		}
+	.label + pre { margin-top: 5px; }
+	pre,
+	code { letter-spacing: 0; }
+
+/* psuedo classes */
+	/* these need to be separate for mozilla to work */
+	::-moz-selection {
+		background-color: #bf7326;
+		color: #eee;
+		}
+	::selection {
+		background-color: #bf7326;
+		color: #eee;
+		} /* safari */
+
+/* constructs */
+	.labels { display: none; }
+	.hili { color: #bf7326; }
+
+/* structure */
+	html,
+	body { min-width: 1024px; min-height: 100%; }
+	html { background: #000 url('img/html.gif') repeat scroll 50% 0; }
+	body {
+		background: url('img/body.png') no-repeat fixed 50% 0;
+		font-family: Tahoma, Geneva, sans-serif; font-size: .8em; line-height: 1.4em; color: #999; /* BigNoodleTitling */
+		letter-spacing: .16em;
+		}
+	#site {
+		position: relative;
+		width: 1024px;
+		margin: 0 auto;
+		background: url('img/site.png') no-repeat scroll 0 75px;
+		}
+		#header,
+		#footer,
+		#content { overflow: auto; }
+		#header {
+			position: relative;
+			height: 187px;
+			}
+			#logo {
+				position: absolute; top: 82px; right: 376px;
+				margin: 0;
+				}
+			#logo a {
+				display: block;
+				width: 345px; height: 50px;
+				border: none;
+				background: url('img/logo_a-hover.png') no-repeat scroll -9999px 5px;
+				opacity: .6;
+				text-indent: -9999px;
+				}
+			#logo a:hover,
+			#logo a:active {
+				width: 385px;
+				background-position: 0 5px;
+				}
+			#logo span { display: none; }
+		#footer {
+			position: relative;
+			padding-top: 30px;
+			overflow: hidden;
+			}
+			#copyright { /* based on #primary */
+				position: absolute; right: 367px; bottom: 0;
+				width: 633px;
+				margin-top: 11px;
+				text-align: right; text-shadow: 1px 1px 5px #000;
+				font-size: .87em; color: #333;
+				}
+		#content {
+			position: relative;
+			min-height: 338px;
+			padding-top: 50px;
+			}
+			#primary,
+			#secondary,
+				#left,
+				#right,
+				#center { overflow: auto; }
+			#primary {
+				float: left;
+				width: 649px;
+				overflow: visible;
+				}
+			#secondary {
+				float: right; 
+				width: 347px; width: 289px; width: 294px;
+				margin-right: 6px;
+				text-align: center;
+				}
+				#demo,
+				#code {
+					margin: 22px 9px 10px; padding: 12px 10px 10px;
+					border-top: 2px solid #999; border-right: none; border-left: none;
+					}
+				#demo { overflow: auto; }
+				#demo + #code { margin-top: 10px; }
+				#demo .title {}
+				#code .label {
+					margin: 15px 11px 5px 13px;
+					text-align: right;
+					font-size: 1em; color: #999;
+					}
+				#code .label a {
+					float: left;
+					position: relative; bottom: 1px;
+					color: #666;
+					}
+				#code h2 + #code .label { margin-top: -19px; }
+				#left,
+				#right { width: 50%; }
+				#left { float: left; }
+				#right { float: right; }
+				#left *:first-child,
+				#right *:first-child { margin-top: 0; }
+				#center {}
+
+/* sections */
+	#bibliography {}
+	#bibliography p { margin-left: 15px; }

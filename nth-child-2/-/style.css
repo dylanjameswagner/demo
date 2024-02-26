@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px Sans-Serif;
+  background: url(./bg.png);
+}
+
+.selected {
+  background: #E18728;
+  color: black;
+  box-shadow: 0 0 5px black;
+  display: inline-block;
+  padding: 3px 5px 3px;
+  border-radius: 8px;
+}
+
+#page-wrap {
+  width: 960px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+.left, .right {
+  width: 50%;
+  float: left;
+}
+
+
+h1 {
+  text-align: center;
+  color: #E18728;
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+h2 {
+  font-weight: 400;
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+}
+h3 {
+  margin: 50px 0 10px 0;
+}
+
+.recipies-list li {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.recipies-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.recipies-list a:hover,
+.recipies-list a:focus {
+  color: #E18728;
+}
+
+input[type=text],
+select {
+  font: inherit;
+  padding: 4px;
+  font-size: 15px;
+  border: 0;
+}
+
+#equation {
+  width: 60px;
+}
+.pink {
+  color: #ff0080;
+}
+
+.instructions {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+#list {
+  padding-left: 10px;
+}
+#list li {
+  margin: 0 0 6px 0;
+  color: white;
+  padding: 2px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+#list ul {
+  margin-top: 2px;
+}
+
+#list li div,
+#list li span {
+  display: inline-block;
+  padding: 3px 5px 5px;
+  border-radius: 8px;
+  color: white;
+}

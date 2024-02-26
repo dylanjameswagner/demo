@@ -1,0 +1,144 @@
+/* demo base */
+
+	* {
+		box-sizing: border-box; /* inset padding */ }
+
+	header,
+	footer,
+	section {
+		display: block; }
+
+	header, footer, section,
+	h1, h2, h3, p {
+		margin: 1em 0 0; }
+
+	h1 + .columns,
+	h2 + .columns,
+	h3 + .columns,
+	h1 + .row,
+	h2 + .row,
+	h3 + .row {
+		margin-top: .5em; }
+
+	h1, h2 { font-size: 27px; }
+	h3, h4 { font-size: 22px; }
+	h5, h6 { font-size: 20px; }
+
+	hr {
+		clear: both;
+		margin: 2em 0; }
+
+	:first-child {
+		margin-top: 0; }
+
+	body {
+		min-width: 320px;
+		min-width: 240px; /* support for really small screens */
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		line-height: 1.2; }
+
+/* layout bottom fixed footer */
+
+	html, body {
+		height: 100%; }
+
+	#top {
+		min-height: 100%;
+		margin-bottom: -88px; }
+	#main {
+		padding-bottom: 88px; }
+	#footer { width: 100%; min-height: 88px;
+		overflow: hidden; }
+
+/* layout fixed width centered */
+
+	.centered {
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 0 5%; /* scale margins horizontal */
+		padding: 2em 2em; /* scale margins vertical horizontal */
+		background-color: rgba(0,0,0,.1); }
+
+/* constructs */
+
+	.title + .content,
+	.content + .content {
+		margin-top: 1em; }
+
+/* layout */
+
+	#header,
+	#footer,
+	#main {
+		margin-top: 0; }
+
+	#top	{ background-color: rgba(0,0,0,.025); }
+	#header { background-color: rgba(0,0,0,.05); }
+	#footer { background-color: rgba(0,0,0,.1); }
+	#main	{ background-color: rgba(0,0,0,.075); }
+
+	#article {}
+
+	#primary,
+	#secondary {
+		margin-bottom: 1em; }
+
+	#primary {
+		float: left;
+		`width: 60%; }
+	#secondary {
+		float: right;
+		`width: 38%; }
+	#tertiary {
+		clear: both;
+		float: left;
+		`width: 50%; }
+	#quaternary {
+		float: right;
+		`width: 50%; }
+
+/* media queries max-width */
+
+@media only screen and (max-width: 1023px){
+
+	.centered {
+		max-width: 768px; }
+
+}
+
+@media only screen and (max-width: 767px){
+
+	.centered {
+		max-width: 480px; }
+
+	#primary,
+	#secondary {
+		margin-bottom: 1em; }
+
+	#primary,
+	#secondary,
+	#tertiary,
+	#quaternary {
+		float: none;
+		width: auto;
+		margin-left: 0 !important; }
+
+}
+
+@media only screen and (max-width: 479px){
+
+	.centered {
+		max-width: 320px; }
+
+}
+
+@media only screen and (max-width: 319px){
+
+	.centered {
+		max-width: 240px; }
+
+}
+
+@media only screen and (max-width: 239px){}

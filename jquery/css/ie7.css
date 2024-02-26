@@ -1,0 +1,81 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// ie7.css
+
+*/
+
+/* common */
+	ul li {list-style-image: none; list-style-position: outside;}
+	code {font-size: 1.2em;}
+	input {padding: 0 2px 1px 2px;}
+	input[type="submit"] {display: block;}
+	
+	.overlay {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);}
+	.overlay {filter: alpha(opacity=50);}
+	
+	.column .header {list-style-image: none !important;}
+	
+	tr:hover td {background: none !important;}
+	tr:hover td:hover {background: #eee !important;}
+	tr:hover td#today {background: #fc0 !important;}
+
+/* structure */
+	#logo {width: 229px;}
+	#right {overflow: hidden;}
+	#page.philosophy #right {overflow: auto;}
+	#footer {padding-top: 45px;}
+
+/* navigation */
+	#nav_main li,
+	#nav_child li {list-style-image: none;}
+	#nav_child li {}
+	#nav_child li a {width: 233px;}
+	#nav_sibling li {display: inline; padding-right: 5px;}
+
+/* primary */
+	.post_date .date-2 {padding-bottom: 9px;}
+	.post_author {width: 472px;}
+	.post_comments a {margin-top: 45px;}
+
+/* secondary */
+	#secondary #search p {margin: 1px;}
+	#secondary ul li {list-style-image: none;}
+	.widget_calendar table {overflow: visible;}
+	.widget_calendar table caption {position: relative; z-index: 110;}
+
+/* contact */
+	#tcform label {position: relative; padding: 0;}
+	#tcform label span {position: absolute;	top: 2px; right: 2px;}
+	#contact_captcha label {width: 216px;}
+	#contact_captcha label span {top: -19px; right: -40px;}
+	#contact_captcha label em {position: absolute; top: 0; right: 0;}
+	#contact_captcha input {width: 33px; margin-right: 2px;}
+	#contact_message {width: 298px;}
+	#contact_submit {height: 18px;}
+	#contact_submit input {position: relative; top: -1px; width: 96px; text-align: right;}
+
+/* wp-polls */
+	.wp-polls-ans ul {overflow: hidden;}
+
+/* olark */
+	#habla_topbar_div {
+		padding-top: 6px !important;
+		padding-bottom: 6px !important;
+		}
+		#habla_closebutton_a,
+		#habla_sizebutton_a {margin-top: -3px !important;}
+		.habla_conversation_p_item {text-indent: 10px !important;}
+		#habla_conversation_div {padding-left: 25px !important;}
+		#habla_conversation_div,
+		#habla_input_div,
+			#habla_wcsend_input {background: #ccc !important;} /* cover links hover thru */
+
+/* style */
+	#gallery_sm,
+	#gallery_md {list-style-image: none !important;}
+	#gallery_hover li {width: 559px;}
+
+	x#page.portfolio.child #right {overflow: hidden;}
+
+	#gallery_nav {display: block;}

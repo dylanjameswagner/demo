@@ -1,0 +1,12 @@
+#disclaimer,
+#disclaimer * { color: red; }
+#disclaimer {
+	margin: 13px 9px; padding: 10px 8px 1px;
+	border: 1px solid red;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	}
+#disclaimer h3 { margin: 0 9px 2px; }
+#disclaimer .close {
+	float: right;
+	margin: 0 1px 0 0;
+	}

@@ -1,0 +1,203 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// contact.css
+
+*/
+	#preview {}
+	#preview p { width: auto !important; }
+
+	#contact {}
+	#contact .filled { font-style: italic; color: #999; }
+
+/* contact_information */
+		#contact_information {
+			float: right;
+			width: 285px;
+			}
+			#contact_resume {}
+
+/* contact_sites */
+			#contact_sites {}
+			#contact_sites li {
+				float: left;
+				margin: 0 10px 10px 0;
+				}
+			#contact_sites li a {
+				display: block;
+				width: 38px; height: 38px;
+				background: #555 no-repeat scroll 50% 50%;
+				text-indent: -9999px;
+				}
+			#contact_sites li a:hover,
+			#contact_sites li a:active { background-color: #444; }
+			#contact_sites .google		a { background-image: url('../img/handycons-2/google_32.png'); }
+			#contact_sites .facebook	a { background-image: url('../img/handycons-2/facebook_32.png'); }
+			#contact_sites .twitter		a { background-image: url('../img/handycons-2/twitter_32.png'); }
+			#contact_sites .flickr		a { background-image: url('../img/handycons-2/_32.png'); }
+			#contact_sites .linkedin	a { background-image: url('../img/handycons-2/linkedin_32.png'); }
+			#contact_sites .etsy		a { background-image: url('../img/handycons-2/_32.png'); }
+			#contact_sites .spreadshirt a { background-image: url('../img/handycons-2/_32.png'); }
+			#contact_sites .lastfm		a { background-image: url('../img/handycons-2/lastfm_32.png'); }
+			#contact_sites .ping		a { background-image: url('../img/icon_contact/ping_32.png'); }
+
+/* contact_im */
+			#contact_im {}
+			#contact_im li {
+				float: left;
+				margin: 0 10px 10px 0;
+				}
+			#contact_im dt {
+				display: block;
+				width: 16px; height: 16px;
+				padding: 2px;
+				background: no-repeat scroll 50% 50%;
+				text-indent: -9999px;
+				}
+			#contact_im dd { padding: 2px 0; }
+			#contact_im dd:hover { background-color: #444; }
+			#contact_im .googletalk { background-image: url('../img/icon_contact/googletalk_16.png'); }
+			#contact_im .facebook	{ background-image: url('../img/icon_contact/facebook_16.png'); }
+			#contact_im .aim		{ background-image: url('../img/icon_contact/aim_16.png'); }
+			#contact_im .yim		{ background-image: url('../img/icon_contact/yim_16.png'); }
+			#contact_im .msn		{ background-image: url('../img/icon_contact/msn_16.png'); }
+			#contact_im .skype		{ background-image: url('../img/handycons-2/skype_16.png'); }
+			#contact_im .jabber		{ background-image: url('../img/icon_contact/jabber_16.png'); }
+
+/* #contact_form */
+		#contact_form {
+			position: relative;
+			float: left;
+			width: 622px; width: 630px; height: 425px;
+			margin: 10px; padding: 0;
+			}
+		#contact_form p {
+			position: relative;
+			width: 306px;
+			margin: 0 0 10px; padding: 0;
+			}
+		#contact_form p small {
+			position: absolute; top: 6px; right: 5px;
+			text-transform: uppercase;
+			font-size: .75em; color: #555;
+			}
+		#contact_form label {
+			display: block;
+			position: relative;
+			padding: 0 0 2px 1px;
+			overflow: auto;
+			color: #bf7326;
+			}
+		#contact_form label:after { content: ''; }
+		#contact_form input,
+		#contact_form select,
+		#contact_form textarea {
+			background-color: #eee;
+			border: 1px inset #ccc;
+			font-size: inherit;
+			}
+		#contact_form input[type="text"] {
+			width: 300px;
+			padding: 2px 0 2px 3px;
+			}
+		#contact_form select {
+			width: 306px;
+			padding: 1px 1px 0 0;
+			}
+		#contact_form textarea {
+			width: 301px; height: 328px;
+			margin: 0; padding: 0 0 0 3px;
+			-moz-border-radius-bottomright: 0; -webkit-border-radius-bottomright: 0; border-radius-bottomright: 0;
+			-moz-border-radius-bottomleft: 0;-webkit-border-radius-bottomleft: 0; border-radius-bottomleft: 0;
+			font-family: inherit; /* firefox */
+			}
+			#contact_name {}
+			#contact_e-mail {}
+			#contact_phone {}
+			#contact_referrer {}
+			#contact_deadline { margin-top: 30px !important; }
+			#contact_deadline label { float: left; }
+			#contact_deadline input {
+				float: right;
+				width: 133px !important;
+				margin-bottom: 10px;
+				text-align: center;
+				}
+			#contact_subject,
+			#contact_message { position: absolute !important; top: 0; right: 0; }
+			#contact_message { top: 49px; }
+			#contact_method,
+			#contact_captcha { overflow: auto; }
+			#contact_captcha {
+				position: absolute !important; bottom: 0; left: 0;
+				margin-bottom: 0;
+				}
+			#contact_captcha span { float: right; }
+			#contact_method span { color: #bf7326; }
+			#contact_method span:after { content: ''; }
+			#contact_method label { float: right; padding-left: 5px; overflow: hidden; color: #999; }
+			#contact_method label:after { content: normal; }
+			#contact_method input { float: none; }
+			#contact_captcha label {  }
+			#contact_captcha input { width: 133px !important; }
+			#contact_preview {
+				position: absolute !important; right: 0; bottom: 0;
+				width: 304px !important;
+				margin: 0 1px 1px; padding: 0 0 3px !important;
+				border: 1px inset #ccc; border-top: none;
+				-moz-border-radius-bottomright: 3px; -webkit-border-radius-bottomright: 3px; border-radius-bottomright: 3px;
+				-moz-border-radius-bottomleft: 3px;-webkit-border-radius-bottomleft: 3px; border-radius-bottomleft: 3px;
+				background: #eee;
+				text-align: right;
+				}
+			#contact_preview input {
+				border: none; background: transparent;
+				text-transform: uppercase;
+				font-weight: bold;
+				}
+			#contact_method span {
+				display: block;
+				position: relative;
+				margin: 0; padding: 0;
+				overflow: auto;
+				}
+			#contact_method span { float: left; }
+			#contact_method label {
+				margin-left: 8px; margin-left: -1px;
+				overflow: hidden;
+				}
+		#contact_form label span {
+				display: block;
+				position: absolute; right: 1px; bottom: 0;
+				text-transform: uppercase;
+				font-size: .8em;
+				}
+
+/* disabled */
+			#contact_preview input[disabled] {
+				background-color: transparent !important;
+				color: #ccc;
+				}
+
+/* alert */
+			#contact_form .alert label { color: red; }
+			#contact_form .alert input,
+			#contact_form .alert select,
+			#contact_form .alert textarea,
+				#contact_preview.alert { border-color: red !important; background-color: yellow; }
+				#contact_preview.alert {}
+			
+			input.invalid { border-color: red !important; background-color: yellow; }
+/* error */
+			input.error,
+			select.error,
+			textarea.error,
+			#contact_preview.error { border: 1px solid red !important; background-color: yellow !important; }
+			#contact_form label.error {
+				position: absolute; top: 1px; right: 0;
+				text-transform: uppercase;
+				font-size: .75em; color: red;
+				}
+			#contact_form label.error.valid { color: green; }
+			#contact_preview.error { border-top: none !important; }
+

@@ -1,0 +1,16 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// ie6.css
+
+*/
+
+/* common */
+	a {padding: 0; background: none;}
+
+/* structure */
+
+/* navigation */
+	#nav_main li {behavior: url('../js/hover.htc');}
+
+/* style */

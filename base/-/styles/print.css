@@ -1,0 +1,25 @@
+/* print.css */
+
+	body {
+		background: #fff;
+		font-size: 12pt; }
+
+	p {
+		orphans: 4;
+		widows: 4; }
+	a {
+		text-decoration: underline;
+		font-weight: bold; }
+
+	a[href]:after {
+		content: ' ['attr(href)']';
+		font-weight: normal; }
+
+/* layout */
+
+    #header,
+    #footer,
+    #main,
+    #primary,
+    #secondary {
+        background: none; }

@@ -1,0 +1,31 @@
+#contact_form { overflow: visible; }
+#contact_form p { position: relative; }
+
+/* error */
+	input.error,
+	select.error,
+	textarea.error,
+	#contact_preview.error {
+		border: 1px solid red !important;
+		background-color: yellow !important;
+		color: red !important;
+		}
+	#contact_form #counter {
+		position: absolute; top: 1px; left: 0;
+		width: 293px;
+		text-align: right;
+		}
+	#contact_form label.error {
+		position: absolute; top: 1px; right: 0px;
+		text-transform: uppercase;
+		font-size: .75em; color: red;
+		}
+	#contact_preview.error { border-top: none !important; }
+
+/* error.valid */
+	#contact_form label.error.valid { color: green; }
+
+/* blur */
+	input.blur,
+	textarea.blur,
+	select.blur { font-style: italic; color: #999; }

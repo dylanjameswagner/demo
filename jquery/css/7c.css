@@ -1,0 +1,14 @@
+tr.alt td { background: #222; }
+
+#nav_paged {
+	position: relative;
+	text-align: center;
+	}
+#nav_paged li {
+	display: inline;
+	}
+#nav_paged li:first-child { position: absolute; top: 0; left: 0; }
+#nav_paged .disabled { visibility: hidden; }
+#nav_paged a {}
+#nav_paged a:hover,
+#nav_paged a:active {}

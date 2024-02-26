@@ -1,0 +1,23 @@
+#demo_nav { height: 60px; }
+#demo_nav li {
+	float: left;
+	margin: 0;
+	text-indent: 0;
+	}
+#demo_nav li a {
+	display: block;
+	background: grey;
+	padding: 10px;
+	}
+#demo_nav li a:hover,
+#demo_nav li a:active { color: #000; }
+
+.demo_top {
+	float: right;
+	margin-top: -31px;
+	}
+.demo_top a {
+	margin-right: 8px;
+	font-size: .75em; color: #666;
+	border-color: #666;
+	}

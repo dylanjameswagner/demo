@@ -1,0 +1,34 @@
+/* navigation.css */
+
+	.accordion,
+	.expandable {
+		padding: 0;
+		border: 1px solid;
+		border-radius: 5px; }
+	.accordion li,
+	.expandable li {
+		list-style: none;
+		margin: 0;
+		border-top: 1px solid;
+		text-indent: 0;
+		cursor: pointer; }
+	.accordion li:first-child,
+	.expandable li:first-child {
+		border: none; }
+	.accordion li a,
+	.expandable li a {
+		border: none; }
+	.accordion > li > a,
+	.expandable > li > a {
+		display: block;
+		padding: .5em .5em; }
+	.accordion > li:not(.active) > a:hover,
+	.expandable > li:not(.active) > a:hover {
+		background-color: #eee;
+		background-color: rgba(0,0,0,.05); }
+	.accordion li ul,
+	.expandable li ul {
+		margin: 0; padding: .25em 1em .5em; }
+	.accordion li ul li,
+	.expandable li ul li {
+		border: none; } 

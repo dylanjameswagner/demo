@@ -1,0 +1,48 @@
+/* jquery.rainbow.css */
+
+/* pre {
+		word-wrap: break-word; }
+*/
+	pre code {
+		margin: 0; padding: 0;
+		border: 0;
+		border-radius: 0; }
+
+	pre .id,
+	pre .class,
+	pre .keyword,
+	pre .css-property,
+	pre .vendor-prefix,
+	pre .sass,
+	pre .css-value,
+	pre .entity.function,
+	pre .storage.function {
+		font-weight: bold; }
+
+	pre .constant.numeric,
+	pre .keyword.unit,
+	pre .hex-color,
+	pre .string,
+	pre .support.value {
+		font-weight: normal; }
+
+	pre .comment		   { color:    #998; }
+	pre .support		   { color: #0086B3; }
+	pre .tag,
+	pre .tag-name		   { color:    navy; }
+	pre .css-property,
+	pre .css-value,
+	pre .vendor-prefix,
+	pre .support.namespace { color:    #333; }
+	pre .constant.numeric,
+	pre .keyword.unit,
+	pre .function		   { color:	 purple; }
+	pre .hex-color		   { color:    #099; }
+	pre .entity.class	   { color:    #458; }
+	pre .entity.id,
+	pre .entity.function   { color:    #900; }
+	pre .attribute,
+	pre .variable		   { color:    teal; }
+	pre .string,
+	pre .support.value	   { color:    #d14; }
+	pre .regexp			   { color: #009926; }

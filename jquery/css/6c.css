@@ -1,0 +1,8 @@
+.ui-widget-overlay {
+    background: url('../img/demo/ui-bg_diagonals-thick_20_666666_40x40.png') repeat fixed 50% 50% #666666;
+    opacity: 0.5;
+	}
+.ui-dialog { position: fixed !important; }
+.ui-dialog-titlebar {
+	margin-bottom: 3px;
+	}

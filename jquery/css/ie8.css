@@ -1,0 +1,59 @@
+/*
+
+	// -------------------------------------------------------------------- //
+	// ie8.css
+
+*/
+
+/* common */
+li {text-indent: -20px !important;}
+ul li {list-style-position: inside;}
+input,
+select,
+textarea {border-color: #fff;}
+input {padding: 0 2px 4px 2px;}
+input[type="checkbox"],
+input[type="radio"] {border: none;}
+
+.overlay {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";}
+
+.column {overflow: hidden;}
+
+#page.services .column li {white-space: nowrap;}
+
+/* structure */
+
+/* navigation */
+.navigation li {text-indent: 0 !important;}
+
+/* primary */
+.post_content {overflow: hidden;}
+
+/* contact */
+#contact_submit {width: 293px; padding: 2px 3px 3px 0;}
+
+/* cforms */
+.cform fieldset {padding-top: 0;}
+.cform fieldset legend {padding: 10px 0;}
+
+.cf-group-after {
+	width: 160px !important;
+	margin-top: 3px !important;
+}
+.cf-after {
+	width: 360px !important;
+	margin-top: 7px !important;
+}
+
+/* olark */
+#habla_topbar_div {line-height: 100%;}
+
+/* innerfade */
+.innerfade li {text-indent: 0 !important;}
+
+/* colorbox */
+#cboxPrevious {background-image: url('../img/colorbox/previous.png');}
+#cboxNext {background-image: url('../img/colorbox/next.png');}        
+
+/* style */
+

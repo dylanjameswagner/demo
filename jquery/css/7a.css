@@ -1,0 +1,7 @@
+#left,
+#right {
+	margin-top: 10px;
+	overflow: auto;
+	}
+#left {	width: 142px !important; }
+#right { width: 454px !important; }

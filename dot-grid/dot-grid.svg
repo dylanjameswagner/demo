@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+    <style type="text/css">
+        .line {
+            fill: #f7f7f7;
+            fill: #000000;
+            opacity: .075;
+        }
+        .dot {
+            fill: #e6e6e6;
+            fill: #000000;
+            opacity: .15;
+        }
+    </style>
+    <rect x="1" class="line" width="23.5" height="0.5"/>
+    <rect y="1" class="line" width="0.5" height="23.5"/>
+    <rect x="0" class="dot" width="0.5" height="0.5"/>
+    <rect x="0.5" y="0.5" class="dot" width="0.5" height="0.5"/>
+    <rect x="24.5" y="0.5" class="dot" width="0.5" height="0.5"/>
+    <rect x="0.5" y="24.5" class="dot" width="0.5" height="0.5"/>
+    <rect x="24.5" y="24.5" class="dot" width="0.5" height="0.5"/>
+</svg>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+
+	<title>:nth-child</title>
+
+	<link rel="stylesheet" href="./-/style.css">
+
+	<script src="./-/jquery.min.js"></script>
+	<script src="./-/example.js"></script>
+</head>
+
+<body>
+
+	<div id="demo-top-bar">
+		<div id="demo-bar-inside">
+
+			<h2 id="demo-bar-badge">
+				<a href="http://css-tricks.com/">CSS-Tricks Example</a>
+
+			</h2>
+
+			<div id="demo-bar-buttons">
+				<a href="http://css-tricks.com/how-nth-child-works/" class="header-button">← Back to Article</a> &nbsp; <a href="http://css-tricks.com/downloads/" class="header-button">More Demos →</a>
+			</div>
+
+		</div>
+	</div>
+	<div id="page-wrap">
+
+		<div class="left">
+
+			<div class="instructions">
+
+				<h1>:nth Tester</h1>
+
+				<code>
+					<select id="el">
+						<option value="li">li</option>
+						<option value="div">div</option>
+					</select>
+					<select id="kind">
+						<option value=":nth-child" selected="">:nth-child</option>
+						<option value=":nth-of-type">:nth-of-type</option>
+						<option value=":nth-last-child">:nth-last-child</option>
+						<option value=":nth-last-of-type">:nth-last-of-type</option>
+					</select>
+					(
+					<input id="equation" type="text" value="3n+2">
+					)
+				</code>
+
+				<h3>Recipes</h3>
+
+				<ul class="recipies-list">
+					<li id="rec-1"><a href="#">Select the third item if it's a list item</a></li>
+					<li id="rec-2"><a href="#">Select the the first four elements if they are list items</a></li>
+					<li id="rec-3"><a href="#">Select the second to last element if it is a list item</a></li>
+					<li id="rec-4"><a href="#">Select the first appearing div</a></li>
+					<li id="rec-5"><a href="#">Select the last appearing div</a></li>
+					<li id="rec-6"><a href="#">Select odd list items</a></li>
+					<li id="rec-7"><a href="#">Select every fifth list item</a></li>
+					<li id="rec-8"><a href="#">Select every third element starting at second if it's a list item</a></li>
+					<li id="rec-9"><a href="#">Select all but the first 6 list items</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="right">
+
+			<h2>&lt;ul&gt;</h2>
+			<ul id="list">
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <span>&lt;span&gt;</span> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <span>&lt;span&gt;</span> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <span>&lt;span&gt;</span>
+					<ul>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					</ul>
+				</li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <span>&lt;span&gt;</span> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <span>&lt;span&gt;</span> <span>&lt;span&gt;</span> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <span>&lt;span&gt;</span></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <span>&lt;span&gt;</span> <span>&lt;span&gt;</span></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div>
+					<ul>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div>
+							<ul>
+								<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+								<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+								<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+							</ul>
+						</li>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+						<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+					</ul>
+				</li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+				<li>&lt;li&gt;  <div>&lt;div&gt;</div> <div>&lt;div&gt;</div> <div>&lt;div&gt;</div></li>
+			</ul>
+			<h2>&lt;/ul&gt;</h2>
+
+		</div>
+
+	</div>
+
+	<style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #222;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		padding: 20px 0 20px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#demo-bar-buttons {
+		padding-top: 10px;
+		float: right;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		margin-left: 20px;
+		color: white;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		text-decoration: underline;
+	}
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(./-/logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+
+
+</body><div id="temp-styles">­<style>#list li:nth-child(3n+2) { background: #E18728; color: black; box-shadow: 0 0 5px black; }</style></div></html>
